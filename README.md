@@ -32,7 +32,6 @@ The Library Management System is a simple PyQt5-based application designed to ma
 ## File Structure
 - **main.py**: Main script to run the application.
 - **library_v2.py**: Contains the Library class which handles book management.
-- **LibraryGUI.py**: Defines the graphical user interface using PyQt5.
 - **books.txt**: Text file to store book information.
 
 ## Contributing
