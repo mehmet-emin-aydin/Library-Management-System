@@ -1,7 +1,0 @@
-The name of The Rose,Arthur,2023,46
-The Capability,Arthur,2015,23
-Sherlock Holmes,Conan Doyle,1890,140
-What Men Live By,Tolstoy,1885,120
-The Nameless,Unknown,1900,248
-The New,Jimmy,2007,186
-ikigai,Noname,1996,440
