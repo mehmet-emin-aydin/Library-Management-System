@@ -37,5 +37,3 @@ The Library Management System is a simple PyQt5-based application designed to ma
 ## Contributing
 Contributions are welcome! If you find any bugs or have suggestions for improvement, please open an issue or submit a pull request.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
