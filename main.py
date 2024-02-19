@@ -38,32 +38,10 @@ class Library:
         except Exception as e:
             print(f"Error occurred while removing the book:\n{e}")
             return False
-        '''
-        try:
-            self.read_file()
-            index = -1
-            for i in range(len(self.book_list)):
-                if int(self.book_list[i][0]) == book_id:
-                    index = i
-            if index == -1:
-                raise ValueError(f"No book with ID {book_id} found.")
-            del self.book_list[index]
-            # Rearrange the IDs of remaining books
-            for i in range(index, len(self.book_list)):
-                self.book_list[i][0] = str((int(self.book_list[i][0])-1))
-            self.file.seek(0)
-            self.file.truncate()
-            self.file.writelines("\n".join([",".join(x) for x in self.book_list]))
-            return True
-        except Exception as e:
-            print(f"Error occurred while removing a book:\n{e}")
-            return False
-        '''
 
 lib = Library()
 lib.read_file()
 print(lib.book_list) # should return the number of books in the
-
 
 def displayMenu():
     choice = input("Menu".center(40, "*")+"\n1.List books!\n2. Add a book to the library!\n3. Remove a book from the library!\n")
@@ -87,5 +65,6 @@ while (choice != 'q'):
             lib.remove_book(removed_book)
         case 'q':
             exit()
-
+        case default:
+            print('Invalid choice')
 del lib
