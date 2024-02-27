@@ -13,7 +13,7 @@ class Library:
         """Read the books from the file and populate the book list."""
         self.file.seek(0)  # Move the file pointer to the beginning
         # Read each line from the file, strip newline characters, and split by comma to get book details
-        self.book_list = [list(book.rstrip("\n").split(',')) for book in self.file.readlines()]
+        self.book_list = [list(book.rstrip("\n").split(',')) for book in self.file.readlines() if book.strip()]
 
     def list_books(self):
         """List all the books stored in the library."""
